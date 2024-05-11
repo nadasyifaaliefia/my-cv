@@ -12,18 +12,18 @@ hr {
 #container {
   position: relative;
   display: flex;
-  background-color: #ffffff;
 }
-#profile { 
-  flex: 15%;
-  display: block;
-  position: center;
+#profile {
+  flex: 25%;
+  display: flex;
+  position: relative;
   flex-direction: column;
-  margin: 5% 2% 0 10%;
-  width: 100%;
-  height: 100%;
-  background-color: #d6e7f3;
+  /* align-items: center; */
+  padding-bottom: 25px;
+  margin: 5% 0 5% 10%;
+  background-color: rgb(117, 210, 241);
 }
+
 #info-cards {
   flex: 55%;
   display: block;
@@ -36,29 +36,30 @@ hr {
   position: center;
   overflow: hidden;
 }
-#image,
-#profile-photo { 
-  position: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 90px;
-}
-#image > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5) !important;
-  height: 100%;
-  width: 100%;
-  display: none;
-}
-#image > a > i {
-  -webkit-text-stroke: 1px #ffffffdd;
-  padding: 40%;
-}
-#image:hover a {
-  display: block;
-}
+image,
+  #profile-photo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff
+  }
+  #image > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5) !important;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  #image > a > i {
+    -webkit-text-stroke: 1px #ffffffdd;
+    padding: 40%;
+  }
+  #image:hover a {
+    display: block;
+  }
 #name {
   font-size: 23px !important;
   line-height: 20px !important;
